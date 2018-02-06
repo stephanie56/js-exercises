@@ -9,4 +9,6 @@ const reduce = (array, fn, init) => {
   // your solution here
 };
 
-reduce(numbers, () => {}, 0); // 15
+const sum = (acc, val) => acc + val;
+
+console.log(reduce(numbers, sum, 0)); // 15

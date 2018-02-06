@@ -15,4 +15,4 @@ const transformStrings = array => {
   // your solution here
 };
 
-transformStrings(flavours);
+console.log(transformStrings(flavours));

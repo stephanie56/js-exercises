@@ -8,5 +8,5 @@ const map = (array, fn) => {
 
 const double = x => x * 2;
 
-map(numbers, double);
+console.log(map(numbers, double));
 // [2, 3, 6, 8, 10]

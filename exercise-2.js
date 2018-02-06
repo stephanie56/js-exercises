@@ -7,7 +7,7 @@ const countWords = words => {
   // your solution here
 };
 
-countWords(someWords);
+console.log(countWords(someWords));
 // {
 //   apple: 2,
 //   banana: 1,
