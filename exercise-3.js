@@ -10,3 +10,5 @@ const double = x => x * 2;
 
 console.log(map(numbers, double));
 // [2, 3, 6, 8, 10]
+
+module.exports = map;

@@ -1,0 +1,24 @@
+{
+  "name": "js-exercises",
+  "version": "1.0.0",
+  "description": "JavaScript Exercises for Bridge",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "jest --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bridge-school/js-exercises.git"
+  },
+  "author": "Bridge School",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bridge-school/js-exercises/issues"
+  },
+  "homepage": "https://github.com/bridge-school/js-exercises#readme",
+  "devDependencies": {
+    "jest": "^22.1.4"
+  }
+}

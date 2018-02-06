@@ -12,3 +12,5 @@ const reduce = (array, fn, init) => {
 const sum = (acc, val) => acc + val;
 
 console.log(reduce(numbers, sum, 0)); // 15
+
+module.exports = reduce;

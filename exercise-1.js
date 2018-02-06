@@ -16,3 +16,5 @@ const transformStrings = array => {
 };
 
 console.log(transformStrings(flavours));
+
+module.exports = transformStrings;

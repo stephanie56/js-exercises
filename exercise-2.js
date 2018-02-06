@@ -13,3 +13,5 @@ console.log(countWords(someWords));
 //   banana: 1,
 //   durian: 3,
 // }
+
+module.exports = countWords;
