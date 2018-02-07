@@ -6,7 +6,12 @@
 const numbers = [1, 2, 3, 4, 5];
 
 const reduce = (array, fn, init) => {
-  // your solution here
+  let acc = init;
+  array.forEach(num => {
+    acc = fn(acc, num);
+  });
+
+  return total;
 };
 
 const sum = (acc, val) => acc + val;
