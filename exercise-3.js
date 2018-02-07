@@ -4,7 +4,7 @@ const numbers = [1, 2, 3, 4, 5];
 
 const map = (array, fn) => {
   return array.reduce((prev, currNum) => {
-    prev.concat(fn(currNum));
+    return prev.concat(fn(currNum));
   }, []);
 };
 
