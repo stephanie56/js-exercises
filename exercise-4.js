@@ -5,15 +5,8 @@
 
 const numbers = [1, 2, 3, 4, 5];
 
-const reduce = (array, fn, init) => {
-  if(array.length === 1) {
-    return fn(init, array[0]);
-  } else {
-    const smChunk = array.slice(0, 1);
-    const lgChunk = array.slice(1);
-    return reduce(lgChunk, fn, reduce(smChunk, fn, init));
-  }
-};
+const reduce = (array, fn, init) => array.length === 1 ?
+  fn(init, array[0]) : reduce(array.slice(1), fn, reduce(array.slice(0, 1), fn, init));
 
 // How it works
 // [1], [2, 3, 4, 5]
@@ -44,5 +37,16 @@ module.exports = reduce;
 //     return fn(init, array[0]);
 //   } else {
 //     return fn(reduce(array.slice(0, currIdx), fn, init), array[currIdx--]);
+//   }
+// };
+
+// Solution 3
+// const reduce = (array, fn, init) => {
+//   if(array.length === 1) {
+//     return fn(init, array[0]);
+//   } else {
+//     const smChunk = array.slice(0, 1);
+//     const lgChunk = array.slice(1);
+//     return reduce(lgChunk, fn, reduce(smChunk, fn, init));
 //   }
 // };
