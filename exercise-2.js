@@ -3,13 +3,10 @@
 
 const someWords = ["apple", "banana", "apple", "durian", "durian", "durian"];
 
-const countWords = words => {
-  return words.reduce((fruitCounter, word) => {
-    return word in fruitCounter ?
-      Object.assign(fruitCounter, {[word]: fruitCounter[word] + 1}) :
-      Object.assign(fruitCounter, {[word]: 1})
+const countWords = words => words.reduce((acc, word) => {
+    word in acc ? acc[word]++ : acc[word] = 1;
+    return acc;
   }, {});
-};
 
 console.log(countWords(someWords));
 // {
