@@ -11,12 +11,10 @@ const flavours = [
   "Overcooked Cabbage"
 ];
 
-const transformStrings = array => {
-  return array.reduce((acc, currStr) => {
-    return currStr.length <= 20 ?
-    acc.concat(currStr.split('').reverse().join('')) : acc;
+const transformStrings = array => array.reduce(
+  (acc, currStr) => {
+    return currStr.length <= 20 ? [...acc, currStr.split('').reverse().join('')] : acc;
   }, []);
-};
 
 console.log(transformStrings(flavours));
 
