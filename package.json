@@ -20,5 +20,9 @@
   "homepage": "https://github.com/bridge-school/js-exercises#readme",
   "devDependencies": {
     "jest": "^22.1.4"
+  },
+  "main": "exercise-1.js",
+  "dependencies": {
+    "es6-promise": "^4.2.4"
   }
 }
