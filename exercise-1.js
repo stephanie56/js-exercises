@@ -11,9 +11,10 @@ const flavours = [
   "Overcooked Cabbage"
 ];
 
-const transformStrings = array => {
-  // your solution here
-};
+const transformStrings = array => array.reduce(
+  (acc, currStr) => {
+    return currStr.length <= 20 ? [...acc, currStr.split('').reverse().join('')] : acc;
+  }, []);
 
 console.log(transformStrings(flavours));
 
